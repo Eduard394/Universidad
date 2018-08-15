@@ -6,7 +6,7 @@ from datetime import datetime
 from django.utils import timezone
 
 # Create your models here.
-
+# our models yeah !!!
 
 class Cliente(models.Model): # clientes 
     nombres = models.CharField(max_length=50, blank=True, null=True)
