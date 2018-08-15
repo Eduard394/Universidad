@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from django.contrib.auth.decorators import login_required
+from Universidad.Apps.ventas.views import foo
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    #url(r'^inicio$', login_required(views.home), name = 'inicio' ),
+    #url(r'^login/$', login_, name='login_'),
+    url(r'inicio/$', foo),
+
 ]
